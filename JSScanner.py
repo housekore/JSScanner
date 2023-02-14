@@ -10,8 +10,9 @@ import colored
 from colored import stylize
 urllib3.disable_warnings()
 print(colored.fg("red"), 
-     "╔════════════════════════════════════════════════════════════════╗\n"
+     " ╔════════════════════════════════════════════════════════════════╗\n"
       "║                    Devlope By 0x240x23elu                      ║\n"
+      "║                    Mod By jjardel                              ║\n"
       "║                                                                ║\n"
       "╚════════════════════════════════════════════════════════════════╝")
 print("╔════════════════════════════════════════════════════════════════╗\n"
@@ -63,8 +64,6 @@ for line in Lines:
             for f in futures
         ]
 
-        
-        
         file2 = open(reg, 'r')
         Lines2 = file2.readlines()
         for line2 in Lines2: 
