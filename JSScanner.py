@@ -12,7 +12,7 @@ print(stylize(
       "║                    Devlope By 0x240x23elu                      ║\n"
       "║                    Mod By jjardel                              ║\n"
       "║                                                                ║\n"
-      "╚════════════════════════════════════════════════════════════════╝")
+      "╚════════════════════════════════════════════════════════════════╝",
     colored.fg("red")
 ))
 
@@ -95,7 +95,8 @@ with open(chosen_file, 'r') as file1:
                         print(colored.fg("red"), "Match {matchNum} was found at: {match}".format(
                             matchNum=matchNum, start=match.start(), end=match.end(), match=match.group()), '\n')
 
-                        with open('zzzzzzzzzzzzzzzout.txt', 'a') as file3:
+                        #with open('zzzzzzzzzzzzzzzout.txt', 'a') as file3:
+                        with open(f'zResultado-{text_files[selection-1]}', 'a') as file3:
                             L = [ip, '\n', "Regex: ", regex, '\n', "Match {matchNum} was found at: {match}".format(
                                 matchNum=matchNum, start=match.start(), end=match.end(), match=match.group()), '\n']
                             file3.writelines(L)
